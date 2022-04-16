@@ -7,10 +7,10 @@
 
 SELECT players.first_name, players.last_name 
 FROM stats 
-INNER JOIN players ON players.id = stats.player_id
-INNER JOIN teams ON teams.id = stats.team_id
+    INNER JOIN players ON players.id = stats.player_id
+    INNER JOIN teams ON teams.id = stats.team_id
 WHERE teams.name = 'Chicago Cubs'
-AND teams.year = '2020';
+AND teams.year = 2020;
 
 -- Expected result: 47 rows starting with
 --
